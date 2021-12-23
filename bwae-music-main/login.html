@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en, myanmar">
+
+<head>
+ <meta charset="UTF-8" />
+ <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+ <link rel="stylesheet" href="vendors/css/reponsivgridsystem.css" />
+ <link rel="stylesheet" href="./css/main.css" />
+ <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+ <title>BWAE MUSIC - LOGIN</title>
+</head>
+
+<body>
+ <!-- header -->
+ <header id="home">
+  <div class="navbar">
+   <img src="./img/core-img/logo.png" alt="" />
+   <nav>
+    <ul id="MenuItems">
+     <div>
+      <li><a href="/resources/index.html">Home</a></li>
+      <li><a href="/resources/album.html">Albums</a></li>
+      <li class="dropdown">
+       <a href="#" class="droplink">Pages &#8744;</a>
+       <div class="dropdown-content">
+        <a href="#">Link1</a>
+        <a href="#">Link1</a>
+        <a href="#">Link1</a>
+        <a href="#">Link1</a>
+       </div>
+      </li>
+      <li><a href="/resources/event.html">Events</a></li>
+      <li><a href="/resources/news.html">News</a></li>
+      <li><a href="/resources/contact.html">Contact</a></li>
+      <li><a href="/resources/login.html">Login/Register</a></li>
+      <li>
+       <a href="#"><i class="fas fa-shopping-cart"></i></a>
+      </li>
+     </div>
+    </ul>
+   </nav>
+  </div>
+ </header>
+
+ <section class="ablum-hero">
+  <div class="title">
+   <p>See what’s new</p>
+   <h3>CONTACT ME</h3>
+  </div>
+ </section>
+
+
+ <!-- login -->
+ <section class="login">
+  <div class="container">
+   <div class="row">
+    <div class="col span_1_of_1">
+    <div class="title">
+     <h3>Welcome Back</h3>
+    </div>
+    <form action="">
+     <label for="email">Email address</label>
+     <input type="email" placeholder=" Enter E-mail" name="email">
+     <p> <i class="fas fa-lock"></i>
+      We'll never share your email with anyone else.
+     </p><br>
+     <label for="password">Password</label>
+     <input type="password" name="password" placeholder="password">
+    </form>
+    <button class="btn btn2">Login</button>
+   </div>
+  </div>
+  </div>
+ </div>
+ </section>
+
+ <!-- footer -->
+ <footer>
+  <div class="row">
+   <div class="col span_1_of_2 text">
+    <h3>ONE SOUND</h3>
+    <P>Copyright ©2021 All rights reserved | This template is made with &#9825; by Su Bway</P>
+   </div>
+   <div class="col span_1_of_2 app">
+    <ul>
+     <li><i class="fab fa-facebook"></i></li>
+     <li><i class="fab fa-pinterest"></i></li>
+     <li><i class="fab fa-twitter"></i></li>
+     <li><i class="fab fa-youtube"></i></li>
+    </ul>
+   </div>
+  </div>
+  </div>
+  <a href="#home"> <i class="fas fa-chevron-up scroll"></i></a>>
+ </footer>
+ <script src="./js/script.js"></script>
+ <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+ <script src="https://kit.fontawesome.com/663b9b744a.js" crossorigin="anonymous"></script>
+
+ <!-- script for scrool -->
+ <script>
+  var scroll = new SmoothScroll('a[href*="#"]', {
+   speed: 1000,
+   speedAsDuration: true,
+  });
+
+ </script>
+ <!-- change navbar background-color when scroll -->
+ <script>
+  $(document).ready(function () {
+   $(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+    if (scroll > 100) {
+     $(".navbar").css("background", "black");
+    }
+
+    else {
+     $(".navbar").css("background", "transparent");
+    }
+   })
+  })
+ </script>
+
+
+
+ <!-- Initialize Swiper -->
+ <script>
+  var swiper = new Swiper(".mySwiper", {
+   spaceBetween: 30,
+   centeredSlides: true,
+   autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+   },
+   pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+   },
+
+  });
+ </script>
+
+
+
+</body>
+
+</html>
